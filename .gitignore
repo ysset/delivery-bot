@@ -93,6 +93,7 @@ pids
 logs
 results
 node_modules
+*/node_modules
 .node_history
 
 ############################
@@ -112,3 +113,4 @@ exports
 *.cache
 build
 .strapi-updater.json
+/src/plugins/delivery-bot/node_modules/

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "telegram_users",
+  "info": {
+    "singularName": "telegram-user",
+    "pluralName": "telegram-users",
+    "displayName": "Telegram user",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "telegramID": {
+      "type": "biginteger"
+    },
+    "username": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    }
+  }
+}

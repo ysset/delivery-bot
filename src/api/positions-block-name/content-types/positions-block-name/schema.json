@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "positions_block_names",
+  "info": {
+    "singularName": "positions-block-name",
+    "pluralName": "positions-block-names",
+    "displayName": "Positions block name",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blockName": {
+      "type": "string",
+      "required": true
+    },
+    "positions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::position.position",
+      "mappedBy": "block_name"
+    }
+  }
+}

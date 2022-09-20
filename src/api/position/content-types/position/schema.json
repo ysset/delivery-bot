@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "positions",
+  "info": {
+    "singularName": "position",
+    "pluralName": "positions",
+    "displayName": "Positions",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "block_name": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::positions-block-name.positions-block-name",
+      "inversedBy": "positions"
+    },
+    "Ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ingredients.ingredients",
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "dishPhoto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "dishName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
